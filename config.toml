@@ -1,0 +1,235 @@
+# Main config file for icon theme.
+theme = "hugo-icon"
+baseURL = "/"
+languageCode = "en-US"
+title = "ICE - lightweight login controller for Windows"
+
+# Metadata
+[params]
+  author = "Siddhant Rimal"
+  description = "ICE - lightweight login controller for Windows built in command shell, wrapped in C"
+
+# Hero section (from here on is for icon theme)
+[params.hero]
+  img = "images/hero_bg.jpg"
+  title = "I.C.E."
+  description = "Lightweight opensource login controller for windows <a href='https://raw.githubusercontent.com/siddhantrimal/ICE/master/download/ICE.zip' download='download'>download for free</a>"
+
+# Navigation section
+[params.nav]
+  idea = "idea"
+  features = "features"
+  work = "work"
+  download = "download"
+  team = "The Team"
+  contact = "Get In Touch"
+  # Include logo instead if HOME:
+  # logo = "path/to/logo"
+
+# idea section
+[params.idea]
+  enable = true
+
+  [params.idea.images]
+    enable = true
+
+    [[params.idea.images.list]]
+      img = "images/img_3.jpeg"
+    [[params.idea.images.list]]
+      img = "images/img_2.jpeg"
+    [[params.idea.images.list]]
+      img = "images/img_1.jpeg"
+    [[params.idea.images.list]]
+      img = "images/img_4.jpeg"
+
+  [[params.idea.item]]
+    weight = 1
+    name = "Why"
+    title = "Why?"
+    subtitle = "It was our first semester poject."
+    description = "<p>We were stuck with Borland-C to develop anything, for the fulfillment of our introductory course. We decided to make something useful, a happy coincidence for you.</p><ul class='checked'><li>Useful features for parents / More day-time for children</li><li>The prefect computer-screen anti-superglue.</li><li>Absolutely <strong>FREE</strong>, with no strings attached.</li></ul><p><a href='#' class='btn btn-primary btn-outline fh5co-content-nav' data-nav-section='contact'>Get In Touch</a></p>"
+
+  [[params.idea.item]]
+    weight = 2
+    name = "How"
+    title = "How?"
+    subtitle = "We fused CLI with CLI."
+    description = "<p>GUI is great but nothing quite beats the no-nonsense TUI attitude. <em>Honestly though, we weren't that familiar with Borland-C based GUI and, we just wanted to get the work done!</em></p><ul class='checked'><li>Features you want, without the gimmick</li><li><em>Uber</em>-light interface</li><li>Unintrusive</li></ul><p><a href='#' class='btn btn-primary btn-outline fh5co-content-nav' data-nav-section='contact'>Get In Touch</a></p>"
+
+  [[params.idea.item]]
+    weight = 3
+    name = "When"
+    title = "When?"
+    subtitle = "The behind-the-scenes story."
+    description = "<p>It was the summer of 2009, when it happened. The days were long, the sun shone high and, the sister of one of the authors' just would not get off her computer screen. Fast forward a few years(<em>2013</em>) and team would make that clunky home-brewed solution into something more pleasant.</p><ul class='checked'><li>Wrapped in C based CLI for better UX</li><li>Enhanced Features</li><li>Much more stable and easy to un/install</li></ul><p><a href='#' class='btn btn-primary btn-outline fh5co-content-nav' data-nav-section='contact'>Get In Touch</a></p>"
+
+# features section
+[params.features]
+  enable = true
+  video = false
+  vidlink = "https://www.youtube.com/embed/YuegsY1CXSA?rel=0&amp;showinfo=0"
+  title = "Salient Features"
+  description = "We were really surprised when we found many of these features <strong>only</strong> on paid software."
+
+  [[params.features.item]]
+    icon = "icon-clock"
+    title = "On the clock"
+    description = "Timer based login control allows you to set your desired computer usage period, for children."
+
+  [[params.features.item]]
+    icon = "icon-key"
+    title = "A smart bypass for you"
+    description = "<em><strong>&quot;How do I access my computer if it is locked?&quot;</strong></em>. You make your pendrive, your computer-key. That's how."
+
+  [[params.features.item]]
+    icon = "icon-bulb"
+    title = "Smartypants-proof"
+    description = "Designed to <strong>not</strong> fall for petty tricks like changing system time. <em>Even penalizing in some cases.</em>"
+
+  [[params.features.item]]
+    icon = "icon-pencil"
+    title = "Easily Configurable"
+    description = "Change/Check the existing configuration right from the interface."
+
+  [[params.features.item]]
+    icon = "icon-ghost"
+    title = "Runs Silently"
+    description = "Your child won't even notice it's there"
+
+  [[params.features.item]]
+    icon = "icon-paper-plane"
+    title = "Paperlight"
+    description = "Ran unnoticably on a pre-2009 old clunky PC, will fly on yours!"
+
+# features gallery section
+[params.work]
+  enable = true
+
+  [[params.work.item]]
+    title = "Generates configurations just for you"
+    subtitle = "Easy setup"
+    img = "images/features/img_1.PNG"
+
+  [[params.work.item]]
+    title = "Set aside hours of use"
+    subtitle = "Customize Timer"
+    img = "images/features/img_2.PNG"
+
+  [[params.work.item]]
+    title = "Double Click and it starts working"
+    subtitle = "No-Hassle Setup"
+    img = "images/features/img_3.PNG"
+
+  [[params.work.item]]
+    title = "Shows up when time's up!"
+    subtitle = "Timing Function"
+    img = "images/features/img_4.PNG"
+
+  [[params.work.item]]
+    title = "No Power? No Problem!"
+    subtitle = "Auto-resume timer"
+    img = "images/features/img_5.PNG"
+
+  [[params.work.item]]
+    title = "Don't lock yourself out!"
+    subtitle = "Your Pendrive is your key"
+    img = "images/features/img_6.PNG"
+
+  [[params.work.item]]
+    title = "Change locks often"
+    subtitle = "Unique Key Generation"
+    img = "images/features/img_7.PNG"
+
+  [[params.work.item]]
+    title = "Fine tune to your changing needs"
+    subtitle = "Post micro-configuration CLI"
+    img = "images/features/img_8.PNG"
+
+# Download section
+[params.download]
+	enable = true
+	title = "Get it for yourself"
+  description = "Use as it is or, fork"
+  note = "Some antiviruses/browsers might identify the download as a virus, due the the presence of script files. It's a false-positive. There are no viruses. Please check out the project on github; every part of the code is available to read."
+
+  	[[params.download.item]]
+  	text = "Download"
+  	url = "https://raw.githubusercontent.com/siddhantrimal/ICE/master/download/ICE.zip"
+    para = "download"
+
+  	[[params.download.item]]
+  	text = "View this project on Github"
+  	url = "https://github.com/siddhantrimal/ICE/tree/master/project"
+
+# Team section
+[params.team]
+  enable = true
+  title = "Meet The Team"
+  description = "People who made this happen"
+
+  [[params.team.item]]
+    name = "Shaurabh Chapagain"
+    position = "Developer"
+    description = "Wrote a lot of code in C.<br/> Now, a network whiz!"
+    img = "images/team/shaurabhchapagain.png"
+    facebook = "https://www.facebook.com/shaurabh.chapagain"
+    #twitter = "#"
+    #dribbble = "#"
+    #instagram = "#"
+    #github = "#"
+    linkedin = "https://np.linkedin.com/in/shaurabh-chapagain-9b5b6487"
+
+  [[params.team.item]]
+    name = "Shreesha Pokharel"
+    position = "Developer"
+    description = "Coffee and Code, they flowed.<br/>Currently, plays effortlessly with data."
+    img = "images/team/shreeshapokharel.png"
+    #facebook = "#"
+    #twitter = "#"
+    #dribbble = "#"
+    #instagram = "#"
+    github = "https://github.com/Shreesha09"
+    #linkedin = "#"
+
+  [[params.team.item]]
+    name = "Siddhant Rimal"
+    position = "Ideator, Developer"
+    description = "It's this guy's original clunky project from 2009.<br/>C# developer, in present."
+    img = "images/team/siddhantrimal.png"
+    facebook = "https://www.facebook.com/siddhantrimal"
+    twitter = "https://www.twitter.com/siddhantrimal"
+    #dribbble = "#"
+    #instagram = "#"
+    github = "https://github.com/siddhantrimal"
+    linkedin = "https://np.linkedin.com/in/siddhantrimal"
+
+  [[params.team.item]]
+    name = "Sneha Prasai"
+    position = "Developer"
+    description = "System design, mind-map and flowcharts are her thing!<br/>C# developer, right now."
+    img = "images/team/snehaprasai.png"
+    facebook = "https://www.facebook.com/sneha.prasai"
+    #twitter = "#"
+    #dribbble = "#"
+    #instagram = "#"
+    github = "https://github.com/snehaprasai"
+    linkedin = "https://np.linkedin.com/in/sneha-prasai-241746107"
+
+# Contact section
+[params.contact]
+  enable = true
+  title = "Get In Touch"
+  message = "Getting ideas? We're all ears!"
+
+# Footer section
+# Note here that the copyright and attribution statement must remain as part of the license agreement. If you wish to remove this, please contact freehtml5 and pay for a professional license.
+[params.footer]
+  enable = true
+  note = "<p><small>&copy; 2013 Shaurabh Chapagain, Shreesha Pokharel, Siddhant Rimal, Sneha Prasai<br/>Distributed, for use, under the standard <a href='https://github.com/siddhantrimal/ICE/blob/master/LICENSE' target='_blank' style='color:#9b9b9b; cursor:pointer;'>MIT License</a>.</small></p><p style='font-size:.7em;''><small>&copy; 2016 Free HTML5 Template. All Rights Reserved. <a href='http://freehtml5.co/' target='_blank' style='color:#9b9b9b; cursor:pointer;'>FreeHTML5.co</a> design ported to Hugo by <a href='https://github.com/SteveLane/' target='_blank' style='color:#9b9b9b; cursor:pointer;'>SteveLane</a>.<br/>Images are available courtesy of <a href='https://www.pexels.com' target='_blank' style='color:#9b9b9b; cursor:pointer;'>Plexels.</a></small></p>"
+  github = "https://github.com/siddhantrimal/ICE/fork"
+  #twitter = "#"
+  #facebook = "#"
+  #vine = "#"
+  #linkedin = "#"
+  #instagram = ""
+  

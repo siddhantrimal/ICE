@@ -1,1 +1,0 @@
-CreateObject("Wscript.Shell").Run "ICE.exe",0,True

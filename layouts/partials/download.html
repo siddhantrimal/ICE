@@ -1,0 +1,24 @@
+<div id="fh5co-download" data-section="download">
+  <div class="container">
+     {{ with .Site.Params.download }}
+    <div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
+      <h2>{{ .title }}</h2>
+      <p>{{ .description | markdownify }}</p>
+    </div>
+    <div class="col-md-12 text-center">
+      <p>
+    {{ range .item }}
+    {{if (isset . "para")}}
+        <a href="{{ .url }}" class="btn btn-primary btn-outline" download="{{ .para }}">{{ .text }}</a>
+    {{else}}
+        <a href="{{ .url }}" class="btn btn-primary btn-outline">{{ .text }}</a>
+    {{ end }}
+    {{ end }}
+      </p>
+    </div>
+     <div class="col-md-6 col-md-offset-3 text-center fh5co-heading sidenote">
+      <p>{{ .note | markdownify }}</p>
+    </div>
+    {{ end }}  
+  </div>
+</div> <!-- END fh5co-download -->
